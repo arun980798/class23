@@ -9,5 +9,131 @@ body {
   height: 100%;
   width: 100%;
   background: black;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+html{
+  font-size: clamp(14px,1vw,18px);
+}
 
+main {
+}
+
+main {
+ 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .veu1 {
+    background: black;
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    #top {
+      display: flex;
+      border-radius: 5%;
+     
+      width: 100%;
+      padding: 2%;
+
+      img {
+   
+        width: 100%;
+        border-radius: 5%;
+      }
+    }
+
+    #bootom {
+      display: flex;
+      border-radius: 5%;
+     
+      width: 100%;
+      padding: 2%;
+
+      #conto {
+        background: #1e1e1e;
+        height: 100%;
+        width: 100%;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 13rem;
+
+        #stud {
+          padding: 3%;
+          display: flex;
+          justify-content: start;
+          align-items: start;
+        }
+
+        #pcont {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          gap: 7rem;
+          padding: 2rem;
+
+          #pconthad {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5rem;
+
+            #conthad {
+              font-weight: 300;
+              font-size: 3rem;
+              
+            }
+
+            #cotentp {
+              font-weight: 200;
+              font-size: 1.4rem;
+              text-transform: capitalize;
+              color: #b4b3af;
+            }
+
+            a {
+              text-decoration: none;
+              color: rgb(216, 215, 215);
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #veu2{
+    
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    .veu1 {
+      flex-direction: row;
+
+      #top {
+        width: 50%;
+      }
+
+      #bootom {
+        width: 50%;
+
+        #conto {
+          #pcont {
+            #pconthad {
+              gap: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
