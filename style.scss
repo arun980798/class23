@@ -18,12 +18,14 @@ html {
 }
 
 main {
+  max-width: 2000px;
 }
 
 main {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   .veu1 {
     background: black;
@@ -54,7 +56,6 @@ main {
 
       #conto {
         background: #1e1e1e;
-        height: 100%;
         width: 100%;
         border-radius: 5%;
         display: flex;
@@ -122,8 +123,73 @@ main {
         font-size: 2rem;
         text-transform: capitalize;
       }
-      h1{
+      h1 {
         font-size: 3rem;
+        text-align: center;
+      }
+    }
+  }
+  #veu3 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+
+    #dueo1 {
+      padding: 2%;
+      width: 100%;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 5%;
+      }
+    }
+
+    #dueo2 {
+      padding: 2%;
+
+      #dueobox {
+        display: flex;
+        flex-direction: column;
+        background: #1e1e1e;
+        border-radius: 5%;
+        padding: 2%;
+        justify-content: space-between;
+        gap: 1rem;
+
+        #decp1 {
+          display: flex;
+          justify-content: start;
+          align-items: start;
+          font-size: 1rem;
+        }
+
+        #decp2 {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          gap: 7rem;
+
+          #erop {
+            font-size: 3rem;
+            font-weight: 200;
+          }
+          #decpdivp {
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+            font-weight: 100;
+            color: #949390;
+            #1parop {
+              font-size: 5%;
+            }
+            #2parop {
+              font-size: 1rem;
+            }
+          }
+        }
       }
     }
   }
@@ -153,6 +219,25 @@ main {
     #veu2 {
       .classvie1 {
         flex-direction: row;
+      }
+    }
+    #veu3 {
+      width: 100%;
+      flex-direction: row-reverse;
+      #dueo1 {
+        width: 50%;
+      }
+      #dueo2 {
+        width: 50%;
+        #dueobox {
+      
+          #decp2 {
+            #decpdivp {
+              flex-direction: row;
+             
+            }
+          }
+        }
       }
     }
   }
